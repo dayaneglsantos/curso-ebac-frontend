@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.container {
+  justify-content: center;
+  display: flex;
+  margin-top: 10px;
+}
+
+form {
+  display: grid;
+  width: 390px;
+}
+
+form input,
+button {
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+}
+
+.message-erro {
+  background-color: brown;
+  padding: 5px;
+  color: white;
+  text-align: center;
+  margin: 2px;
+  display: none;
+  font-size: 15px;
+}
+
+.sucess-message {
+  background-color: aquamarine;
+  text-align: center;
+  padding: 5px;
+  margin: 2px;
+  display: none;
+  font-size: 15px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
