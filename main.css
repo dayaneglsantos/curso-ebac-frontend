@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+  margin-top: 25px;
+  font-family: "Mulish", sans-serif;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+header p {
+  font-style: italic;
+}
+
+form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form input,
+button {
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+}
+
+form input {
+  width: 350px;
+  margin-right: 5px;
+}
+
+form button {
+  background-color: rgb(238, 202, 157);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+ul {
+  display: grid;
+  justify-content: center;
+}
+
+ul li {
+  list-style: none;
+  border: 1px solid rgb(238, 202, 157);
+  margin: 3px 0;
+  background-color: beige;
+  border-radius: 5px;
+  padding: 4px 10px;
+  width: 500px;
+  cursor: pointer;
+  display: none;
+}
+
+ul li p.rabiscado {
+  text-decoration: line-through;
+}
