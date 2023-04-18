@@ -6,10 +6,10 @@ $(document).ready(function () {
   $("form").validate({
     rules: {
       name: { required: true },
-      tel: { required: true },
-      email: { required: true },
-      cep: { required: true },
-      cpf: { required: true },
+      tel: { required: true, number: true },
+      email: { required: true, email: true },
+      cep: { required: true, number: true },
+      cpf: { required: true, number: true },
     },
     messages: {
       name: '<p class="alert">Nome é obrigatório</p>',
