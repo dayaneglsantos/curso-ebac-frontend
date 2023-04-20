@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  color: #fff;
+  font-family: "Zilla Slab", serif;
+  background-image: linear-gradient(
+    to bottom,
+    #834838,
+    #6d3b41,
+    #503340,
+    #342b35,
+    #212121
+  );
+}
+
+header {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+header img {
+  height: 75px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+header ul li {
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+header ul li a:hover {
+  text-decoration: underline;
+}
+
+#sobre,
+#produtos {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#sobre {
+  display: flex;
+  margin-bottom: 25px;
+  justify-content: center;
+}
+
+#sobre img {
+  height: 300px;
+  border-radius: 40px;
+  margin-right: 20px;
+}
+
+#sobre > div {
+  display: flex;
+  padding: 15px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#sobre p {
+  margin-bottom: 8px;
+}
+
+#produtos {
+  margin-bottom: 25px;
+}
+
+.container-itens {
+  display: flex;
+}
+
+.item {
+  width: 25%;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.item img {
+  max-width: 80%;
+  margin-bottom: 20px;
+}
+
+.item p {
+  margin: 8px 0;
+}
+
+.item button {
+  padding: 8px;
+  margin-bottom: 5px;
+  background-color: #251619;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+}
+
+#contato {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+footer form {
+  display: grid;
+}
+
+footer form input,
+textarea {
+  padding: 5px;
+  width: 250px;
+  margin-bottom: 5px;
+}
+
+footer form textarea {
+  resize: none;
+  height: 100px;
+}
+
+button {
+  padding: 5px;
+  background-color: #834838;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+}
+
+footer img {
+  height: 25px;
+}
+
+.redes a {
+  text-decoration: none;
+}
+
+/* Celular */
+
+@media screen and (max-width: 767px) {
+  header ul li a {
+    font-size: 15px;
+  }
+
+  #sobre {
+    display: block;
+    text-align: center;
+  }
+
+  #sobre img {
+    height: 165px;
+    margin-right: 0;
+  }
+
+  #sobre > div {
+    display: block;
+  }
+
+  .container-itens {
+    display: block;
+  }
+
+  .item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  #contato {
+    display: block;
+  }
+
+  footer form {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .dados-contato {
+    margin-bottom: 15px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #sobre {
+    display: block;
+  }
+
+  #sobre img {
+    height: 300px;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  #sobre > div {
+    display: block;
+    text-align: center;
+  }
+
+  .container-itens {
+    flex-wrap: wrap;
+  }
+
+  .item {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
