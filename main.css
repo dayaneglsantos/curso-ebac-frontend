@@ -160,7 +160,7 @@ footer img {
 
 @media screen and (max-width: 767px) {
   header ul li a {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   #sobre {
@@ -169,12 +169,13 @@ footer img {
   }
 
   #sobre img {
-    height: 165px;
+    height: 140px;
     margin-right: 0;
   }
 
   #sobre > div {
     display: block;
+    text-align: center;
   }
 
   .container-itens {
