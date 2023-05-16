@@ -14,6 +14,7 @@ header {
   position: sticky;
   top: 0;
   left: 0;
+  padding: 0 15px;
 }
 header .container {
   max-width: 1024px;
@@ -79,19 +80,19 @@ section .container .products .product-button:hover {
 }
 
 @media screen and (max-width: 1023px) {
-  .container {
+  section .container {
     max-width: 80%;
   }
-  .products {
+  section .container .products {
     grid-template-columns: repeat(2, 48.5%);
     column-gap: 3%;
   }
 }
 @media screen and (max-width: 767px) {
-  .products {
+  section .container .products {
     display: block;
   }
-  .product-item {
+  section .container .products .product-item {
     margin-bottom: 32px;
   }
 }

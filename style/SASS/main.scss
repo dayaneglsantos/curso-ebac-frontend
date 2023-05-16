@@ -16,6 +16,7 @@ header {
   position: sticky;
   top: 0;
   left: 0;
+  padding: 0 15px;
 
   .container {
     @include container();
@@ -88,22 +89,22 @@ section {
 }
 
 @media screen and (max-width: variaveis.$tablet) {
-  .container {
+  section .container {
     max-width: 80%;
-  }
 
-  .products {
-    grid-template-columns: repeat(2, 48.5%);
-    column-gap: 3%;
+    .products {
+      grid-template-columns: repeat(2, 48.5%);
+      column-gap: 3%;
+    }
   }
 }
 
 @media screen and (max-width: variaveis.$mobile) {
-  .products {
+  section .container .products {
     display: block;
-  }
 
-  .product-item {
-    margin-bottom: 32px;
+    .product-item {
+      margin-bottom: 32px;
+    }
   }
 }
