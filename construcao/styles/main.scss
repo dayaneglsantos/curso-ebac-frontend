@@ -1,0 +1,97 @@
+@use "var";
+@use "header";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var.$bgColor;
+  color: var.$txtColor;
+  font-family: "Noto Sans Symbols", sans-serif;
+}
+
+.img-discord {
+  height: 70px;
+  width: 70px;
+  justify-content: center;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+#sobre {
+  margin-top: 50px;
+}
+
+#comunidade {
+  margin-top: 100px;
+}
+
+#curiosidades {
+  margin-top: 100px;
+}
+
+.curiosity-item {
+  padding: 18px;
+  border: 1px solid rgb(82, 14, 160);
+  border-radius: 8px;
+}
+
+footer {
+  background-color: var.$bgHeader;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.message {
+  resize: none;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: rgb(93, 47, 146);
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn:hover {
+  background-color: rgb(82, 14, 160);
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    margin-top: 35px;
+  }
+}
+
+input {
+  width: 350px;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+  margin-left: 15px;
+  margin-top: 20px;
+}

@@ -1,0 +1,43 @@
+@use "var";
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+h1 {
+  font-family: "Black Ops One", cursive;
+}
+
+.navbar {
+  background-color: var.$bgHeader;
+  padding: 12px 32px;
+
+  @media (max-width: 768px) {
+    padding: 10px 0;
+    justify-content: center;
+  }
+
+  .nav {
+    @media (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .nav-link {
+    color: var.$txtColor;
+    padding: 0;
+    margin-left: 16px;
+
+    &.active {
+      color: var.$txtColor;
+      border-bottom: 2px solid var.$txtColor;
+    }
+
+    &:hover {
+      border-bottom: 2px solid var.$txtColor;
+    }
+  }
+}
