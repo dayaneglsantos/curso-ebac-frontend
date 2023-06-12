@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Hind Siliguri", sans-serif;
+}
+header {
+  height: 50vh;
+  background-image: url(./images/fundo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    content: "";
+    opacity: 0.6;
+  }
+
+  .container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 54px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    color: #fff;
+  }
+
+  h1 {
+    font-family: "Oleo Script", cursive;
+  }
+
+  p {
+    font-size: 30px;
+    margin: 35px 0;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #efed58;
+    padding: 14px;
+    border-radius: 20px;
+    display: block;
+    width: 25%;
+    color: rgb(41, 41, 41);
+  }
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 120px;
+  background-image: linear-gradient(
+    to right,
+    #eef4b4,
+    #edf39f,
+    #edf189,
+    #eeef72,
+    #efed58,
+    #eeef72,
+    #edf189,
+    #edf39f,
+    #eef4b4
+  );
+
+  .local,
+  .atracoes {
+    text-align: center;
+    font-size: 18px;
+    img {
+      height: 250px;
+      border-radius: 20px;
+    }
+    h2 {
+      padding: 15px 0;
+    }
+  }
+}
+
+.alerta {
+  text-align: center;
+  padding: 24px 0 32px;
+  border-top: 2px dashed red;
+  background-color: rgb(250, 248, 230);
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+
+    img {
+      height: 50px;
+    }
+    h2 {
+      font-size: 32px;
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+
+    li {
+      font-size: 20px;
+      border-bottom: 2px solid rgb(0, 0, 0);
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "curso-ebac-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "parcel src/index.html src/main.js src/main.scss",
+    "build": "parcel build src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dayaneglsantos/curso-ebac-frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dayaneglsantos/curso-ebac-frontend/issues"
+  },
+  "homepage": "https://github.com/dayaneglsantos/curso-ebac-frontend#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.2",
+    "parcel": "^2.9.2",
+    "sass": "^1.63.3",
+    "sharp": "^0.31.3"
+  }
+}

@@ -1,0 +1,2 @@
+const e=new Date("Apr 02, 2024 19:00"),t=e.getTime(),n=setInterval(function(){let e=new Date,r=e.getTime(),o=t-r;document.getElementById("regressiva").innerHTML=`${Math.floor(o/864e5)} dia(s) ${Math.floor(o%864e5/36e5)}hr(s) ${Math.floor(o%36e5/6e4)}min ${Math.floor(o%6e4/1e3)}seg`,o<0&&(clearInterval(n),document.getElementById("regressiva").innerHTML=`Evento j\xe1 iniciado`)},1e3);
+//# sourceMappingURL=index.fb1a4d72.js.map
