@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const xhttp = new XMLHttpRequest();
-  const endpoint = "https://api.github.com/users/ogiansouza";
+  const endpoint = "https://api.github.com/users/dayaneglsantos";
 
   fetch(endpoint)
     .then(function (resposta) {
